@@ -6,21 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet"> 
     <title>Document</title>
 </head>
 <body>
-    <div class="card">
-        <div class="card__top">
-            <i class="icon fas fa-signal fa-xs icon__top--margin"></i>
-            <i class="icon fas fa-wifi fa-xs icon__top--margin"></i>
-            <i class="icon fas fa-battery-full fa-xs icon__top--margin"></i>
+    <nav class="menu">
+        <ul>
+            <li class="menu__item">Home</li>
+            <li class="menu__item">About</li>
+            <li class="menu__item">Work</li>
+        </ul>
+    </nav>
+    <section class="home">
+        <p class="home__title">I'm Anderson Vallejo<span class="home__title-profession">Junior Front-end Developer</span></p>
+        <div class="home__icons">
+            <i class="icon fab fa-github-square fa-5x"></i>
+            <i class="icon fab fa-linkedin fa-5x"></i>
+            <i class="icon fab fa-twitter-square fa-5x"></i>
         </div>
-        <a href="https://flamboyant-bose-8ae496.netlify.app/"><img class="card__image" src="images/002.png" alt=""></a>
-        <div class="card__bottom">
-            <i class="icon fas fa-square icon__bottom--margin"></i>
-            <i class="icon far fa-circle icon__bottom--margin"></i>
-            <i class="icon fas fa-caret-left fa-lg icon__bottom--margin"></i>
+    </section>
+    <section class="about">
+        <h2 class="about__title">About me</h2>
+        <p class="about__text">
+            I'm Anderson, Fron-end Developer, I have completed my 
+            training thanks to MDN and Freecodecamp in HTML, CSS 
+            and Javascript, also currently learning SASS and BEM 
+            Methodoly. I am passionate about new technologies and 
+            tools for the web. I care about good practices to have 
+            a better and more readable code, like to work with others
+            and looking for a interesting and meaningful project.
+        </p>
+    </section>
+    <section class="cards__container">
+        <div class="card">
+            <div class="card__top">
+                <i class="icon fas fa-signal fa-xs icon__top--margin"></i>
+                <i class="icon fas fa-wifi fa-xs icon__top--margin"></i>
+                <i class="icon fas fa-battery-full fa-xs icon__top--margin"></i>
+            </div>
+            <a href="https://flamboyant-bose-8ae496.netlify.app/"><img class="card__image" src="images/002.png" alt=""></a>
+            <div class="card__bottom">
+                <i class="icon fas fa-square icon__bottom--margin"></i>
+                <i class="icon far fa-circle icon__bottom--margin"></i>
+                <i class="icon fas fa-caret-left fa-lg icon__bottom--margin"></i>
+            </div>
         </div>
-    </div>
+    </section>
 </body>
 </html>

@@ -2,10 +2,95 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(../images/background3.jpg);
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    margin: 0;
+}
+
+.menu{
+    background-color: #000;
+    font-size: 1.4em;
+    height: 50px;
+    left: 0;
+    padding-top: 5px;
+    position: sticky;
+    text-align: center;
+    top: 0px;
+    width: 100%;
+}
+
+.menu__item{
+    color: gray;
+    cursor: pointer;
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.menu__item:hover{
+    color: rgb(91, 200, 207);;
+}
+
+.home{
+    margin-top: 100px;
+    height: 100vh;
+}
+
+.home__title{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 6em;
+    text-align: center;
+    padding: 20px;
+}
+
+.home__title-profession{
+    color: rgb(91, 174, 207);
+    display: block;
+    font-size: 1.3rem;
+}
+
+.home__icons{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+.icon{
+    color: hsl(0, 0%, 100%);
+    margin-right: 20px;
+}
+
+.fa-github-square, .fa-linkedin, .fa-twitter-square{
+    cursor: pointer;
+}
+
+.about{
+    color: white;
+    font-size: 2em;
+    letter-spacing: 1px;
+    height: 100vh;
+    text-align: left;
+    padding: 100px 20px 20px 20px;
+}
+
+.about__title{
+    color:rgb(91, 174, 207);
+}
+
+.about__text{
+    line-height: 1.5;
+}
+
 .card{
     background-color: #fff;
+    border: 1px solid rgb(31, 30, 30);
     border-radius: 15px;
-    box-shadow: 2px 4px 5px rgb(161, 150, 150);
+    box-shadow: 3px 3px 5px rgb(20, 20, 20);
     cursor: pointer;
     height: 400px;
     position: relative;
@@ -40,10 +125,6 @@
     position: absolute;
     overflow: hidden;
     width: 100%;
-}
-
-.icon{
-    color: #bbbbbd;
 }
 
 .icon__top--margin{

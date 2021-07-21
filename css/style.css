@@ -7,7 +7,7 @@ html{
 }
 
 body{
-    background-image: url(../images/background3.jpg);
+    background-image: url(../images/background.jpg);
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
     font-size: 10px;
@@ -100,7 +100,7 @@ body{
     padding-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 60%;
 }
 
 .card{
@@ -111,7 +111,6 @@ body{
     cursor: pointer;
     height: 400px;
     margin-bottom: 20px;
-    position: relative;
     text-align: center;
     width: 200px;
 }
@@ -140,7 +139,7 @@ body{
     display: flex;
     height: 30px;
     justify-content: center;
-    position: absolute;
+    position: relative;
     width: 100%;
 }
 
@@ -158,12 +157,35 @@ body{
         color: rgb(91, 200, 207);
     }
 
+    .home{
+        margin-top: 200px;
+    }
+
+    .about__title{
+        margin-bottom: 50px;
+    }
+
+    .about{
+        margin: 100px auto 0 auto;
+        padding-top: 100px;
+        width: 70%;
+    }
+
+    .about__text{
+        text-align: left;
+    }
+
     .cards__container{
         display: grid;
         gap: 20px;
-        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
         grid-auto-flow: dense;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .icon:hover{
+        color: rgb(91, 174, 207);
     }
 }

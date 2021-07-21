@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-image: url(../images/background3.jpg);
     background-size: cover;
@@ -30,13 +34,9 @@ body{
     margin-right: 20px;
 }
 
-.menu__item:hover{
-    color: rgb(91, 200, 207);;
-}
-
 .home{
     margin-top: 10px;
-    height: 100vh;
+    height: 90vh;
 }
 
 .home__title{
@@ -71,19 +71,36 @@ body{
 
 .about{
     color: white;
-    font-size: 2em;
+    font-size: 1.8em;
     letter-spacing: 1px;
     height: 100vh;
-    text-align: left;
-    padding: 100px 20px 20px 20px;
+    text-align: center;
+    padding: 30px 20px 0px 20px;
 }
 
-.about__title{
+.about__title, .work__title{
     color:rgb(91, 174, 207);
+}
+
+.work{
+    padding-top: 50px;
+}
+
+.work__title{
+    font-size:  2rem;
+    padding-left: 20px;
+    text-align: center;
 }
 
 .about__text{
     line-height: 1.5;
+}
+
+.cards__container{
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .card{
@@ -93,8 +110,7 @@ body{
     box-shadow: 3px 3px 5px rgb(20, 20, 20);
     cursor: pointer;
     height: 400px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 20px;
     position: relative;
     text-align: center;
     width: 200px;
@@ -111,8 +127,8 @@ body{
 }
 
 .card__image{
-    object-fit: contain;
     height: 350px;
+    object-fit: contain;
     width: 100%;
 }
 
@@ -125,7 +141,6 @@ body{
     height: 30px;
     justify-content: center;
     position: absolute;
-    overflow: hidden;
     width: 100%;
 }
 
@@ -136,4 +151,19 @@ body{
 .icon__bottom--margin{
     margin-left: 15px;
     margin-right: 15px;
+}
+
+@media (min-width: 768px) {
+    .menu__item:hover{
+        color: rgb(91, 200, 207);
+    }
+
+    .cards__container{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-flow: dense;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

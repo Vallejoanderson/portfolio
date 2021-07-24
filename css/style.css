@@ -171,7 +171,6 @@ body{
 .iconghub{
     animation: bigger 1.8s infinite;
     background-color: var(--white);
-    border: 1px solid var rgb(129, 236, 231);
     border-radius: 100%;
     bottom: 80px;
     color: var(--black);

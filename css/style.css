@@ -6,6 +6,7 @@
 :root{    
     --black: #000;
     --blue: rgb(91, 174, 207);
+    --darkblue: rgb(11, 83, 112);
     --gray: rgb(31, 30, 30);
     --white: hsl(0, 0%, 100%);
     --lightgray: hsl(0, 5%, 78%);
@@ -29,10 +30,12 @@ body{
     height: 50px;
     left: 0;
     padding-top: 5px;
+    padding-right: 20px;
     position: sticky;
     text-align: center;
     top: 0px;
     width: 100%;
+    z-index: 1;
 }
 
 .menu__item{
@@ -46,6 +49,7 @@ body{
 .home{
     margin-top: 10px;
     height: 90vh;
+    width: 100%;
 }
 
 .home__title{
@@ -64,14 +68,15 @@ body{
 
 .home__icons{
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
-    width: 150px;
+    width: 200px;
 }
 
 .icon{
     color: var(--white);
-    margin-right: 20px;
 }
 
 .fa-github-square, .fa-linkedin, .fa-twitter-square{
@@ -98,7 +103,6 @@ body{
 
 .work__title{
     font-size:  2rem;
-    padding-left: 20px;
     text-align: center;
 }
 
@@ -120,7 +124,9 @@ body{
     box-shadow: 3px 3px 2px var(--gray);
     cursor: pointer;
     height: 400px;
+    margin-left: auto;
     margin-bottom: 20px;
+    margin-right: auto;
     text-align: center;
     width: 200px;
 }
@@ -136,8 +142,8 @@ body{
 }
 
 .card__image{
-    height: 350px;
     object-fit: contain;
+    height: 350px;
     width: 100%;
 }
 
@@ -162,13 +168,39 @@ body{
     margin-right: 15px;
 }
 
+.iconghub{
+    animation: bigger 1.8s infinite;
+    background-color: var(--white);
+    border: 1px solid var rgb(129, 236, 231);
+    border-radius: 100%;
+    bottom: 80px;
+    color: var(--black);
+    box-shadow: 0px 1px 2px var(--darkblue);
+    right: -65px;
+    position: relative;
+}
+
+@keyframes bigger {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+  }
+
+
 @media (min-width: 768px) {
     .menu__item:hover{
         color: var(--blue);
     }
 
     .home{
-        margin-top: 200px;
+        margin-top: 170px;
     }
 
     .about__title{
@@ -197,5 +229,9 @@ body{
 
     .icon:hover{
         color: var(--blue);
+    }
+
+    .iconghub:hover{
+        color: var(--darkblue);
     }
 }

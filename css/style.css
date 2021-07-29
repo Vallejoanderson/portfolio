@@ -8,7 +8,7 @@
     --blue: rgb(91, 174, 207);
     --darkblue: rgb(11, 83, 112);
     --gray: rgb(31, 30, 30);
-    --white: hsl(0, 0%, 100%);
+    --white: #ccc;
     --lightgray: hsl(0, 5%, 78%);
 }
 
@@ -86,7 +86,7 @@ body{
 .about{
     color: var(--white);
     font-size: 1.8em;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     height: 100vh;
     text-align: center;
     padding: 30px 20px 0px 20px;
@@ -209,7 +209,7 @@ body{
     .about{
         margin: 100px auto 0 auto;
         padding-top: 100px;
-        width: 70%;
+        width: 50%;
     }
 
     .about__text{
